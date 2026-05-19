@@ -1,0 +1,84 @@
+﻿{
+    "name": "IMDb",
+    "dataColors": [
+        "#F7C600",
+        "#806800",
+        "#FCE200",
+        "#F7C700",
+	"#DFB200",
+        "#000000",
+        "#544400",
+        "#806800"
+    ],
+    "background": "#FFFFFF",
+    "foreground": "#070f25",
+    "tableAccent": "#0F1934",
+    "bad": "#E57200",
+    "neutral": "#75787B",
+    "good": "#00AB8E",
+    "minimum": "#0082BA",
+    "center": "#A59C94",
+    "maximum": "#004C97",
+    "textClasses": {
+        "label": {
+            "color": "#000000",
+            "fontFace": "Trebuchet MS",
+            "fontSize": 9
+        },
+        "callout": {
+            "color": "#003594",
+            "fontFace": "Trebuchet MS",
+            "fontSize": 16
+        },
+        "title": {
+            "color": "#003594",
+            "fontFace": "Trebuchet MS",
+            "fontSize": 10
+        },
+        "header": {
+            "color": "#003594",
+            "fontFace": "Trebuchet MS",
+            "fontSize": 10
+        }
+    },
+    "visualStyles": {
+        "*": {
+            "*": {
+                "visualTooltip": [
+                    {
+                        "titleFontColor": {
+                            "solid": {
+                                "color": "#FFFFFF"
+                            }
+                        },
+                        "valueFontColor": {
+                            "solid": {
+                                "color": "#FFFFFF"
+                            }
+                        }
+                    }
+                ],
+                "outspacePane": [
+                    {
+                        "titleSize": 10,
+                        "headerSize": 10,
+                        "checkboxAndApplyColor": {
+                            "solid": {
+                                "color": "#E57200"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "page": {
+            "*": {
+                "background": [
+                    {
+                        "transparency": 100
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,995 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue254;\red0\green0\blue0;\red144\green1\blue18;
+\red9\green60\blue148;\red19\green118\blue70;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c99608;\cssrgb\c0\c0\c0;\cssrgb\c63922\c8235\c8235;
+\cssrgb\c1569\c31765\c64706;\cssrgb\c3529\c52549\c34510;}
+\margl1440\margr1440\vieww26100\viewh16400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \cb2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 \{\cb1 \
+\cb2     \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Save data as CSV"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2     \cf4 \cb2 \strokec4 "objectId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "55d030cf-037c-464e-893f-a1e1baacaeef"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2     \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2         \cf4 \cb2 \strokec4 "activities"\cf0 \cb2 \strokec3 : [\cb1 \
+\cb2             \{\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy bronze__filming_locations"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "dependsOn"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "policy"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "timeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "0.12:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retry"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 0\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retryIntervalInSeconds"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 30\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureOutput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureInput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                 \},\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "source"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseSource"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "sqlReaderQuery"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "select *\\nfrom [Warehouse_Main].[dev].[bronze__filming_locations]"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "queryTimeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "02:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "partitionOption"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "None"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Warehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "endpoint"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "zgahv5yqnhoexnq3qfygnvlliy-tvcpx7pfgrau7iwviiv54jlrb4.datawarehouse.fabric.microsoft.com"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "dc64e8a6-b328-489f-9ee4-0d889b3a5a10"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseTable"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "sink"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextSink"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "storeSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseWriteSettings"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "formatSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextWriteSettings"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "fileExtension"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ".txt"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "57342e7a-f7a7-471a-a0cc-c5ac9a0d66f1"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "rootFolder"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Files"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedText"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "location"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseLocation"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "fileName"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "bronze__filming_locations.csv"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "folderPath"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "download"\cf0 \cb1 \strokec3 \
+\cb2                                 \},\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "columnDelimiter"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ","\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "escapeChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\\\"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "firstRowAsHeader"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "quoteChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\""\cf0 \cb1 \strokec3 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "enableStaging"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "translator"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "TabularTranslator"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversion"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversionSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "allowDataTruncation"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "treatBooleanAsNumber"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                         \}\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 \}\cb1 \
+\cb2             \},\cb1 \
+\cb2             \{\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy bronze__name_basics"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "dependsOn"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "policy"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "timeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "0.12:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retry"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 0\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retryIntervalInSeconds"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 30\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureOutput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureInput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                 \},\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "source"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseSource"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "sqlReaderQuery"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "select *\\nfrom [Warehouse_Main].[dev].[bronze__name_basics]"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "queryTimeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "02:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "partitionOption"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "None"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Warehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "endpoint"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "zgahv5yqnhoexnq3qfygnvlliy-tvcpx7pfgrau7iwviiv54jlrb4.datawarehouse.fabric.microsoft.com"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "dc64e8a6-b328-489f-9ee4-0d889b3a5a10"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseTable"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "sink"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextSink"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "storeSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseWriteSettings"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "formatSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextWriteSettings"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "fileExtension"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ".txt"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "57342e7a-f7a7-471a-a0cc-c5ac9a0d66f1"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "rootFolder"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Files"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedText"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "location"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseLocation"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "fileName"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "bronze__name_basics.csv"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "folderPath"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "download"\cf0 \cb1 \strokec3 \
+\cb2                                 \},\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "columnDelimiter"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ","\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "escapeChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\\\"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "firstRowAsHeader"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "quoteChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\""\cf0 \cb1 \strokec3 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "enableStaging"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "translator"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "TabularTranslator"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversion"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversionSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "allowDataTruncation"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "treatBooleanAsNumber"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                         \}\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 \}\cb1 \
+\cb2             \},\cb1 \
+\cb2             \{\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy bronze__title_basics"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "dependsOn"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "policy"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "timeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "0.12:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retry"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 0\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retryIntervalInSeconds"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 30\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureOutput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureInput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                 \},\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "source"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseSource"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "sqlReaderQuery"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "select *\\nfrom [Warehouse_Main].[dev].[bronze__title_basics]"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "queryTimeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "02:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "partitionOption"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "None"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Warehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "endpoint"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "zgahv5yqnhoexnq3qfygnvlliy-tvcpx7pfgrau7iwviiv54jlrb4.datawarehouse.fabric.microsoft.com"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "dc64e8a6-b328-489f-9ee4-0d889b3a5a10"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseTable"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "sink"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextSink"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "storeSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseWriteSettings"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "formatSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextWriteSettings"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "fileExtension"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ".txt"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "57342e7a-f7a7-471a-a0cc-c5ac9a0d66f1"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "rootFolder"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Files"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedText"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "location"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseLocation"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "fileName"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "bronze__title_basics.csv"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "folderPath"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "download"\cf0 \cb1 \strokec3 \
+\cb2                                 \},\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "columnDelimiter"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ","\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "escapeChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\\\"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "firstRowAsHeader"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "quoteChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\""\cf0 \cb1 \strokec3 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "enableStaging"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "translator"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "TabularTranslator"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversion"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversionSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "allowDataTruncation"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "treatBooleanAsNumber"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                         \}\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 \}\cb1 \
+\cb2             \},\cb1 \
+\cb2             \{\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy bronze__title_ratings"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "dependsOn"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "policy"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "timeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "0.12:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retry"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 0\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retryIntervalInSeconds"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 30\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureOutput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureInput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                 \},\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "source"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseSource"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "sqlReaderQuery"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "select *\\nfrom [Warehouse_Main].[dev].[bronze__title_ratings]"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "queryTimeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "02:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "partitionOption"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "None"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Warehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "endpoint"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "zgahv5yqnhoexnq3qfygnvlliy-tvcpx7pfgrau7iwviiv54jlrb4.datawarehouse.fabric.microsoft.com"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "dc64e8a6-b328-489f-9ee4-0d889b3a5a10"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseTable"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "sink"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextSink"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "storeSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseWriteSettings"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "formatSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextWriteSettings"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "fileExtension"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ".txt"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "57342e7a-f7a7-471a-a0cc-c5ac9a0d66f1"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "rootFolder"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Files"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedText"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "location"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseLocation"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "fileName"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "bronze__title_ratings.csv"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "folderPath"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "download"\cf0 \cb1 \strokec3 \
+\cb2                                 \},\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "columnDelimiter"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ","\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "escapeChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\\\"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "firstRowAsHeader"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "quoteChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\""\cf0 \cb1 \strokec3 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "enableStaging"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "translator"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "TabularTranslator"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversion"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversionSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "allowDataTruncation"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "treatBooleanAsNumber"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                         \}\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 \}\cb1 \
+\cb2             \},\cb1 \
+\cb2             \{\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy silver__filming_locations"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "dependsOn"\cf0 \cb2 \strokec3 : [\cb1 \
+\cb2                     \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "activity"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy bronze__filming_locations"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "dependencyConditions"\cf0 \cb2 \strokec3 : [\cb1 \
+\cb2                             \cf5 \cb2 \strokec5 "Succeeded"\cf0 \cb1 \strokec3 \
+\cb2                         ]\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 ],\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "policy"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "timeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "0.12:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retry"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 0\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retryIntervalInSeconds"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 30\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureOutput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureInput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                 \},\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "source"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseSource"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "sqlReaderQuery"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "select *\\nfrom [Warehouse_Main].[dev].[silver__filming_locations]"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "queryTimeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "02:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "partitionOption"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "None"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Warehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "endpoint"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "zgahv5yqnhoexnq3qfygnvlliy-tvcpx7pfgrau7iwviiv54jlrb4.datawarehouse.fabric.microsoft.com"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "dc64e8a6-b328-489f-9ee4-0d889b3a5a10"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseTable"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "sink"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextSink"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "storeSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseWriteSettings"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "formatSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextWriteSettings"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "fileExtension"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ".txt"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "57342e7a-f7a7-471a-a0cc-c5ac9a0d66f1"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "rootFolder"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Files"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedText"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "location"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseLocation"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "fileName"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "silver__filming_locations.csv"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "folderPath"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "download"\cf0 \cb1 \strokec3 \
+\cb2                                 \},\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "columnDelimiter"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ","\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "escapeChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\\\"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "firstRowAsHeader"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "quoteChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\""\cf0 \cb1 \strokec3 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "enableStaging"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "translator"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "TabularTranslator"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversion"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversionSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "allowDataTruncation"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "treatBooleanAsNumber"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                         \}\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 \}\cb1 \
+\cb2             \},\cb1 \
+\cb2             \{\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy silver__name_basics"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "dependsOn"\cf0 \cb2 \strokec3 : [\cb1 \
+\cb2                     \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "activity"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy bronze__name_basics"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "dependencyConditions"\cf0 \cb2 \strokec3 : [\cb1 \
+\cb2                             \cf5 \cb2 \strokec5 "Succeeded"\cf0 \cb1 \strokec3 \
+\cb2                         ]\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 ],\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "policy"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "timeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "0.12:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retry"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 0\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retryIntervalInSeconds"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 30\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureOutput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureInput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                 \},\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "source"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseSource"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "sqlReaderQuery"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "select *\\nfrom [Warehouse_Main].[dev].[silver__name_basics]"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "queryTimeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "02:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "partitionOption"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "None"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Warehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "endpoint"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "zgahv5yqnhoexnq3qfygnvlliy-tvcpx7pfgrau7iwviiv54jlrb4.datawarehouse.fabric.microsoft.com"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "dc64e8a6-b328-489f-9ee4-0d889b3a5a10"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseTable"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "sink"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextSink"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "storeSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseWriteSettings"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "formatSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextWriteSettings"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "fileExtension"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ".txt"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "57342e7a-f7a7-471a-a0cc-c5ac9a0d66f1"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "rootFolder"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Files"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedText"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "location"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseLocation"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "fileName"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "silver__name_basics.csv"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "folderPath"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "download"\cf0 \cb1 \strokec3 \
+\cb2                                 \},\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "columnDelimiter"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ","\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "escapeChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\\\"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "firstRowAsHeader"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "quoteChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\""\cf0 \cb1 \strokec3 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "enableStaging"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "translator"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "TabularTranslator"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversion"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversionSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "allowDataTruncation"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "treatBooleanAsNumber"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                         \}\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 \}\cb1 \
+\cb2             \},\cb1 \
+\cb2             \{\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy silver__title_basics"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "dependsOn"\cf0 \cb2 \strokec3 : [\cb1 \
+\cb2                     \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "activity"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy bronze__title_basics"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "dependencyConditions"\cf0 \cb2 \strokec3 : [\cb1 \
+\cb2                             \cf5 \cb2 \strokec5 "Succeeded"\cf0 \cb1 \strokec3 \
+\cb2                         ]\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 ],\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "policy"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "timeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "0.12:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retry"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 0\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retryIntervalInSeconds"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 30\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureOutput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureInput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                 \},\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "source"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseSource"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "sqlReaderQuery"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "select *\\nfrom [Warehouse_Main].[dev].[silver__title_basics]"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "queryTimeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "02:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "partitionOption"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "None"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Warehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "endpoint"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "zgahv5yqnhoexnq3qfygnvlliy-tvcpx7pfgrau7iwviiv54jlrb4.datawarehouse.fabric.microsoft.com"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "dc64e8a6-b328-489f-9ee4-0d889b3a5a10"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseTable"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "sink"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextSink"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "storeSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseWriteSettings"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "formatSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextWriteSettings"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "fileExtension"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ".txt"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "57342e7a-f7a7-471a-a0cc-c5ac9a0d66f1"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "rootFolder"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Files"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedText"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "location"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseLocation"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "fileName"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "silver__title_basics.csv"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "folderPath"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "download"\cf0 \cb1 \strokec3 \
+\cb2                                 \},\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "columnDelimiter"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ","\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "escapeChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\\\"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "firstRowAsHeader"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "quoteChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\""\cf0 \cb1 \strokec3 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "enableStaging"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "translator"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "TabularTranslator"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversion"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversionSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "allowDataTruncation"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "treatBooleanAsNumber"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                         \}\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 \}\cb1 \
+\cb2             \},\cb1 \
+\cb2             \{\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy silver__title_ratings"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "dependsOn"\cf0 \cb2 \strokec3 : [\cb1 \
+\cb2                     \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "activity"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy bronze__title_ratings"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "dependencyConditions"\cf0 \cb2 \strokec3 : [\cb1 \
+\cb2                             \cf5 \cb2 \strokec5 "Succeeded"\cf0 \cb1 \strokec3 \
+\cb2                         ]\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 ],\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "policy"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "timeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "0.12:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retry"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 0\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retryIntervalInSeconds"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 30\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureOutput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureInput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                 \},\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "source"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseSource"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "sqlReaderQuery"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "select *\\nfrom [Warehouse_Main].[dev].[silver__title_ratings]"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "queryTimeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "02:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "partitionOption"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "None"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Warehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "endpoint"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "zgahv5yqnhoexnq3qfygnvlliy-tvcpx7pfgrau7iwviiv54jlrb4.datawarehouse.fabric.microsoft.com"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "dc64e8a6-b328-489f-9ee4-0d889b3a5a10"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseTable"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "sink"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextSink"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "storeSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseWriteSettings"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "formatSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextWriteSettings"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "fileExtension"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ".txt"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "57342e7a-f7a7-471a-a0cc-c5ac9a0d66f1"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "rootFolder"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Files"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedText"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "location"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseLocation"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "fileName"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "silver__title_ratings.csv"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "folderPath"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "download"\cf0 \cb1 \strokec3 \
+\cb2                                 \},\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "columnDelimiter"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ","\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "escapeChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\\\"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "firstRowAsHeader"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "quoteChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\""\cf0 \cb1 \strokec3 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "enableStaging"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "translator"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "TabularTranslator"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversion"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversionSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "allowDataTruncation"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "treatBooleanAsNumber"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                         \}\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 \}\cb1 \
+\cb2             \},\cb1 \
+\cb2             \{\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy gold__director_summary"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "dependsOn"\cf0 \cb2 \strokec3 : [\cb1 \
+\cb2                     \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "activity"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy silver__filming_locations"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "dependencyConditions"\cf0 \cb2 \strokec3 : [\cb1 \
+\cb2                             \cf5 \cb2 \strokec5 "Succeeded"\cf0 \cb1 \strokec3 \
+\cb2                         ]\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 ],\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "policy"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "timeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "0.12:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retry"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 0\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retryIntervalInSeconds"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 30\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureOutput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureInput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                 \},\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "source"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseSource"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "sqlReaderQuery"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "select *\\nfrom [Warehouse_Main].[dev].[gold__director_summary]"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "queryTimeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "02:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "partitionOption"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "None"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Warehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "endpoint"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "zgahv5yqnhoexnq3qfygnvlliy-tvcpx7pfgrau7iwviiv54jlrb4.datawarehouse.fabric.microsoft.com"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "dc64e8a6-b328-489f-9ee4-0d889b3a5a10"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseTable"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "sink"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextSink"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "storeSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseWriteSettings"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "formatSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextWriteSettings"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "fileExtension"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ".txt"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "57342e7a-f7a7-471a-a0cc-c5ac9a0d66f1"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "rootFolder"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Files"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedText"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "location"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseLocation"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "fileName"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "gold__director_summary.csv"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "folderPath"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "download"\cf0 \cb1 \strokec3 \
+\cb2                                 \},\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "columnDelimiter"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ","\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "escapeChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\\\"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "firstRowAsHeader"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "quoteChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\""\cf0 \cb1 \strokec3 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "enableStaging"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "translator"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "TabularTranslator"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversion"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversionSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "allowDataTruncation"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "treatBooleanAsNumber"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                         \}\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 \}\cb1 \
+\cb2             \},\cb1 \
+\cb2             \{\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy gold__film_catalog"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "dependsOn"\cf0 \cb2 \strokec3 : [\cb1 \
+\cb2                     \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "activity"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy silver__name_basics"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "dependencyConditions"\cf0 \cb2 \strokec3 : [\cb1 \
+\cb2                             \cf5 \cb2 \strokec5 "Succeeded"\cf0 \cb1 \strokec3 \
+\cb2                         ]\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 ],\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "policy"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "timeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "0.12:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retry"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 0\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retryIntervalInSeconds"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 30\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureOutput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureInput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                 \},\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "source"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseSource"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "sqlReaderQuery"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "select *\\nfrom [Warehouse_Main].[dev].[gold__film_catalog]"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "queryTimeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "02:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "partitionOption"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "None"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Warehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "endpoint"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "zgahv5yqnhoexnq3qfygnvlliy-tvcpx7pfgrau7iwviiv54jlrb4.datawarehouse.fabric.microsoft.com"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "dc64e8a6-b328-489f-9ee4-0d889b3a5a10"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseTable"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "sink"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextSink"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "storeSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseWriteSettings"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "formatSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextWriteSettings"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "fileExtension"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ".txt"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "57342e7a-f7a7-471a-a0cc-c5ac9a0d66f1"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "rootFolder"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Files"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedText"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "location"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseLocation"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "fileName"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "gold__film_catalog.csv"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "folderPath"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "download"\cf0 \cb1 \strokec3 \
+\cb2                                 \},\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "columnDelimiter"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ","\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "escapeChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\\\"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "firstRowAsHeader"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "quoteChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\""\cf0 \cb1 \strokec3 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "enableStaging"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "translator"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "TabularTranslator"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversion"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversionSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "allowDataTruncation"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "treatBooleanAsNumber"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                         \}\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 \}\cb1 \
+\cb2             \},\cb1 \
+\cb2             \{\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy gold__location_summary"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "dependsOn"\cf0 \cb2 \strokec3 : [\cb1 \
+\cb2                     \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "activity"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Copy silver__title_basics"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "dependencyConditions"\cf0 \cb2 \strokec3 : [\cb1 \
+\cb2                             \cf5 \cb2 \strokec5 "Succeeded"\cf0 \cb1 \strokec3 \
+\cb2                         ]\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 ],\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "policy"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "timeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "0.12:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retry"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 0\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "retryIntervalInSeconds"\cf0 \cb2 \strokec3 : \cf6 \cb2 \strokec6 30\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureOutput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "secureInput"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                 \},\cb1 \
+\cb2                 \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "source"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseSource"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "sqlReaderQuery"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "select *\\nfrom [Warehouse_Main].[dev].[gold__location_summary]"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "queryTimeout"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "02:00:00"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "partitionOption"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "None"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Warehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "endpoint"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "zgahv5yqnhoexnq3qfygnvlliy-tvcpx7pfgrau7iwviiv54jlrb4.datawarehouse.fabric.microsoft.com"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "dc64e8a6-b328-489f-9ee4-0d889b3a5a10"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DataWarehouseTable"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "sink"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextSink"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "storeSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseWriteSettings"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "formatSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedTextWriteSettings"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "fileExtension"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ".txt"\cf0 \cb1 \strokec3 \
+\cb2                         \},\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "datasetSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "linkedService"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "name"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse_Main"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "properties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "annotations"\cf0 \cb2 \strokec3 : [],\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Lakehouse"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "workspaceId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "artifactId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "57342e7a-f7a7-471a-a0cc-c5ac9a0d66f1"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                         \cf4 \cb2 \strokec4 "rootFolder"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "Files"\cf0 \cb1 \strokec3 \
+\cb2                                     \}\cb1 \
+\cb2                                 \}\cb1 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "DelimitedText"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "typeProperties"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "location"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "LakehouseLocation"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "fileName"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "gold__location_summary.csv"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                     \cf4 \cb2 \strokec4 "folderPath"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "download"\cf0 \cb1 \strokec3 \
+\cb2                                 \},\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "columnDelimiter"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 ","\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "escapeChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\\\"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "firstRowAsHeader"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                                 \cf4 \cb2 \strokec4 "quoteChar"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "\\""\cf0 \cb1 \strokec3 \
+\cb2                             \},\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "schema"\cf0 \cb2 \strokec3 : []\cb1 \
+\cb2                         \}\cb1 \
+\cb2                     \},\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "enableStaging"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                     \cf4 \cb2 \strokec4 "translator"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "type"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "TabularTranslator"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversion"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                         \cf4 \cb2 \strokec4 "typeConversionSettings"\cf0 \cb2 \strokec3 : \{\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "allowDataTruncation"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 true\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2                             \cf4 \cb2 \strokec4 "treatBooleanAsNumber"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                         \}\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 \}\cb1 \
+\cb2             \}\cb1 \
+\cb2         ],\cb1 \
+\cb2         \cf4 \cb2 \strokec4 "lastModifiedByObjectId"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "d66f10cd-daab-40af-841c-0f1b49df5934"\cf0 \cb2 \strokec3 ,\cb1 \
+\cb2         \cf4 \cb2 \strokec4 "lastPublishTime"\cf0 \cb2 \strokec3 : \cf5 \cb2 \strokec5 "2025-06-25T20:28:31Z"\cf0 \cb1 \strokec3 \
+\cb2     \}\cb1 \
+\cb2 \}\cb1 \
+}

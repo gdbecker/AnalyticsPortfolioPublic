@@ -1,0 +1,58 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    colors: { 
+      "white": "hsl(0, 0%, 100%)",
+      "lightGray": "hsl(0, 0%, 81%)",
+      "gray": "#48494d",
+      "lightYellow": "hsl(49, 90%, 70%)",
+      "lightYellowTransparent": "hsla(49, 90%, 70%, 0.7)",
+      "darkYellow": "#b27c00",
+      "darkBlue": "#37bae8",
+      
+      "greenAirflow": "#00ad46",
+      "greenAirflowTransparent": "hsla(144, 100%, 34%, 0.7)",
+      "redAutomation": "#C70039",
+      "redAutomationTransparent": "hsla(343, 100%, 39%, 0.7)",
+      "blueBigQuery": "#4487fb",
+      "blueBigQueryTransparent": "hsla(218, 96%, 63%, 0.7)",
+      "purpleDagster": "#4f43dd",
+      "purpleDagsterTransparent": "hsla(245, 69%, 56%, 0.7)",
+      "orangedbt": "#ff6949",
+      "orangedbtTransparent": "hsla(11, 100%, 64%, 0.7)",
+      "blueDocker": "#2295ed",
+      "blueDockerTransparent": "hsla(206, 85%, 53%, 0.7)",
+      "greenFabric": "#92eba0",
+      "greenFabricTransparent": "hsla(129, 69%, 75%, 0.7)",
+      "greenGoogleLooker": "#34a853",
+      "greenGoogleLookerTransparent": "hsla(136.03, 53%, 43%, 0.7)",
+      "purpleMachineLearning": "hsl(227, 37%, 79%)",
+      "purpleMachineLearningTransparent": "hsla(227, 37%, 79%, 0.7)",
+      "blueMetabase": "#509de4",
+      "blueMetabaseTransparent": "hsla(209, 73%, 60%, 0.7)",
+      "bluePostgreSQL": "#3c6d96",
+      "bluePostgreSQLTransparent": "hsla(207, 43%, 41%, 0.7)",
+      "yellowPowerBI": "hsl(44, 87%, 48%)",
+      "yellowPowerBITransparent": "hsla(44, 87%, 48%, 0.7)",
+      "bluePython": "hsl(197, 100%, 74%)",
+      "bluePythonTransparent": "hsla(197, 100%, 74%, 0.7)",
+      "blueSnowflake": "#249edd",
+      "blueSnowflakeTransparent": "hsla(200, 73%, 50%, 0.7)",
+    },
+    extend: {
+      fontFamily: {
+        interRegular: "Inter-Regular",
+        interBold: "Inter-Bold",
+        interMedium: "Inter-Medium",
+      },
+    },
+  },
+  plugins: [
+    require("daisyui"),
+  ],
+}

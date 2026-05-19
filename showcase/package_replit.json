@@ -1,0 +1,26 @@
+{
+  "name": "showcase",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 5000 -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start -p 5000 -H 0.0.0.0",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "alpinejs": "^3.13.2",
+    "autoprefixer": "10.4.14",
+    "firebase": "^10.1.0",
+    "next": "13.4.4",
+    "postcss": "8.4.24",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.9.0",
+    "tailwindcss": "3.3.2"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "daisyui": "^3.5.0"
+  }
+}

@@ -1,0 +1,63 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue254;\red0\green0\blue0;\red144\green1\blue18;
+\red9\green60\blue148;\red19\green118\blue70;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c99608;\cssrgb\c0\c0\c0;\cssrgb\c63922\c8235\c8235;
+\cssrgb\c1569\c31765\c64706;\cssrgb\c3529\c52549\c34510;}
+\margl1440\margr1440\vieww23800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \cb2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 \{\cb1 \
+\cb2     \cf4 \strokec4 "name"\cf0 \strokec3 : \cf5 \strokec5 "Data Extraction Pipeline"\cf0 \strokec3 ,\cb1 \
+\cb2     \cf4 \strokec4 "objectId"\cf0 \strokec3 : \cf5 \strokec5 "8df1bb69-917f-4d52-a3a8-f98a890ce5ac"\cf0 \strokec3 ,\cb1 \
+\cb2     \cf4 \strokec4 "properties"\cf0 \strokec3 : \{\cb1 \
+\cb2         \cf4 \strokec4 "activities"\cf0 \strokec3 : [\cb1 \
+\cb2             \{\cb1 \
+\cb2                 \cf4 \strokec4 "name"\cf0 \strokec3 : \cf5 \strokec5 "Data Extraction Notebook"\cf0 \strokec3 ,\cb1 \
+\cb2                 \cf4 \strokec4 "type"\cf0 \strokec3 : \cf5 \strokec5 "TridentNotebook"\cf0 \strokec3 ,\cb1 \
+\cb2                 \cf4 \strokec4 "dependsOn"\cf0 \strokec3 : [],\cb1 \
+\cb2                 \cf4 \strokec4 "policy"\cf0 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \strokec4 "timeout"\cf0 \strokec3 : \cf5 \strokec5 "0.12:00:00"\cf0 \strokec3 ,\cb1 \
+\cb2                     \cf4 \strokec4 "retry"\cf0 \strokec3 : \cf6 \strokec6 0\cf0 \strokec3 ,\cb1 \
+\cb2                     \cf4 \strokec4 "retryIntervalInSeconds"\cf0 \strokec3 : \cf6 \strokec6 30\cf0 \strokec3 ,\cb1 \
+\cb2                     \cf4 \strokec4 "secureOutput"\cf0 \strokec3 : \cf5 \strokec5 false\cf0 \strokec3 ,\cb1 \
+\cb2                     \cf4 \strokec4 "secureInput"\cf0 \strokec3 : \cf5 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                 \},\cb1 \
+\cb2                 \cf4 \strokec4 "typeProperties"\cf0 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \strokec4 "notebookId"\cf0 \strokec3 : \cf5 \strokec5 "0d2de202-34d6-4334-b08a-8f6df1b649d3"\cf0 \strokec3 ,\cb1 \
+\cb2                     \cf4 \strokec4 "workspaceId"\cf0 \strokec3 : \cf5 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \cb1 \strokec3 \
+\cb2                 \}\cb1 \
+\cb2             \},\cb1 \
+\cb2             \{\cb1 \
+\cb2                 \cf4 \strokec4 "name"\cf0 \strokec3 : \cf5 \strokec5 "Data Extraction Dataflow"\cf0 \strokec3 ,\cb1 \
+\cb2                 \cf4 \strokec4 "type"\cf0 \strokec3 : \cf5 \strokec5 "RefreshDataflow"\cf0 \strokec3 ,\cb1 \
+\cb2                 \cf4 \strokec4 "dependsOn"\cf0 \strokec3 : [\cb1 \
+\cb2                     \{\cb1 \
+\cb2                         \cf4 \strokec4 "activity"\cf0 \strokec3 : \cf5 \strokec5 "Data Extraction Notebook"\cf0 \strokec3 ,\cb1 \
+\cb2                         \cf4 \strokec4 "dependencyConditions"\cf0 \strokec3 : [\cb1 \
+\cb2                             \cf5 \strokec5 "Succeeded"\cf0 \cb1 \strokec3 \
+\cb2                         ]\cb1 \
+\cb2                     \}\cb1 \
+\cb2                 ],\cb1 \
+\cb2                 \cf4 \strokec4 "policy"\cf0 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \strokec4 "timeout"\cf0 \strokec3 : \cf5 \strokec5 "0.12:00:00"\cf0 \strokec3 ,\cb1 \
+\cb2                     \cf4 \strokec4 "retry"\cf0 \strokec3 : \cf6 \strokec6 0\cf0 \strokec3 ,\cb1 \
+\cb2                     \cf4 \strokec4 "retryIntervalInSeconds"\cf0 \strokec3 : \cf6 \strokec6 30\cf0 \strokec3 ,\cb1 \
+\cb2                     \cf4 \strokec4 "secureOutput"\cf0 \strokec3 : \cf5 \strokec5 false\cf0 \strokec3 ,\cb1 \
+\cb2                     \cf4 \strokec4 "secureInput"\cf0 \strokec3 : \cf5 \strokec5 false\cf0 \cb1 \strokec3 \
+\cb2                 \},\cb1 \
+\cb2                 \cf4 \strokec4 "typeProperties"\cf0 \strokec3 : \{\cb1 \
+\cb2                     \cf4 \strokec4 "dataflowId"\cf0 \strokec3 : \cf5 \strokec5 "c5110cc9-84f4-4965-ab3b-fa7523184c7e"\cf0 \strokec3 ,\cb1 \
+\cb2                     \cf4 \strokec4 "workspaceId"\cf0 \strokec3 : \cf5 \strokec5 "fdfb449d-34e5-4f41-a2d5-422bde25710f"\cf0 \strokec3 ,\cb1 \
+\cb2                     \cf4 \strokec4 "notifyOption"\cf0 \strokec3 : \cf5 \strokec5 "NoNotification"\cf0 \strokec3 ,\cb1 \
+\cb2                     \cf4 \strokec4 "dataflowType"\cf0 \strokec3 : \cf5 \strokec5 "Dataflow-Gen2"\cf0 \cb1 \strokec3 \
+\cb2                 \}\cb1 \
+\cb2             \}\cb1 \
+\cb2         ],\cb1 \
+\cb2         \cf4 \strokec4 "lastModifiedByObjectId"\cf0 \strokec3 : \cf5 \strokec5 "d66f10cd-daab-40af-841c-0f1b49df5934"\cf0 \strokec3 ,\cb1 \
+\cb2         \cf4 \strokec4 "lastPublishTime"\cf0 \strokec3 : \cf5 \strokec5 "2025-05-05T15:35:19Z"\cf0 \cb1 \strokec3 \
+\cb2     \}\cb1 \
+\cb2 \}\cb1 \
+}
